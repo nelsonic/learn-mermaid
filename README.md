@@ -48,22 +48,42 @@ So when you _preview_ a `Markdown` (`.md`) file
 
 ## Examples
 
+### Flow Diagram
+
 ```
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
+    B --> C{fa:fa-car Decisions}
+    C -->|One| D[fa:fa-laptop Laptop]
+    C -->|Two| E[fa:fa-mobile iPhone]
+    C -->|Three| F[fa:fa-plane Drone]
+    F -->|Repeat| A
 ```
 
 ```mermaid
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
+    B --> C{fa:fa-car Decisions}
+    C -->|One| D[fa:fa-laptop Laptop]
+    C -->|Two| E[fa:fa-mobile iPhone]
+    C -->|Three| F[fa:fa-plane Drone]
+    F -->|Repeat| A
+```
+
+### Sequence Diagram
+
+```
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+```
+
+```mermaid
+sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
 ```
 
 # Relevant Reading
